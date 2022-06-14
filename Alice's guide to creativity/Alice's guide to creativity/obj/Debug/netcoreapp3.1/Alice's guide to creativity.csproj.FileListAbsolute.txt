@@ -1,0 +1,21 @@
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\Alice's guide to creativity.exe
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\Alice's guide to creativity.deps.json
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\Alice's guide to creativity.runtimeconfig.json
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\Alice's guide to creativity.runtimeconfig.dev.json
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\Alice's guide to creativity.dll
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\Alice's guide to creativity.pdb
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\obj\Debug\netcoreapp3.1\Alice's guide to creativity.csproj.AssemblyReference.cache
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\obj\Debug\netcoreapp3.1\Alice's guide to creativity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\obj\Debug\netcoreapp3.1\Alice's guide to creativity.AssemblyInfoInputs.cache
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\obj\Debug\netcoreapp3.1\Alice's guide to creativity.AssemblyInfo.cs
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\obj\Debug\netcoreapp3.1\Alice's guide to creativity.csproj.CoreCompileInputs.cache
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\obj\Debug\netcoreapp3.1\Alice's guide to creativity.dll
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\obj\Debug\netcoreapp3.1\Alice's guide to creativity.pdb
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\obj\Debug\netcoreapp3.1\Alice's guide to creativity.genruntimeconfig.cache
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\Spectre.Console.dll
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\obj\Debug\netcoreapp3.1\Alice's guide to creativity.csproj.CopyComplete
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\Spectre.Console.ImageSharp.dll
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\Alice's guide to creativity\Alice's guide to creativity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
