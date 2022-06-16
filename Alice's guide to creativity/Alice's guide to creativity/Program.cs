@@ -23,7 +23,7 @@ namespace Alice_s_guide_to_creativity
         private const int MINIMIZE = 6;
         private const int RESTORE = 9;
         #endregion
-        public static int height = 9;
+        public static int height = 10;
         public static int width = 230;
         public static int[] startText = new int[2];
         public static (int y, int x) offset;
@@ -71,6 +71,7 @@ namespace Alice_s_guide_to_creativity
         public static CanvasImage AliceXD       =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceXD.png");
         public static CanvasImage AliceCry      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceCry.png");
         public static CanvasImage AliceUwU      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceUwU.png");
+        public static CanvasImage AliceOut      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceOut.png");
 
         static void Main(string[] args)
         {
@@ -138,6 +139,9 @@ namespace Alice_s_guide_to_creativity
                             break;
                         case "UwU":
                             dialogue[i / dialogueVariables].Emotion = AliceUwU;
+                            break;
+                        case "Out":
+                            dialogue[i / dialogueVariables].Emotion = AliceOut;
                             break;
                         default:
                             dialogue[i / dialogueVariables].Emotion = AliceHappy;
@@ -331,6 +335,8 @@ namespace Alice_s_guide_to_creativity
                 case "pentamento":
                     pentamentoActive = true;
                     break;
+                case null:
+                    break;
                 default:
                     break;
             }
@@ -362,7 +368,7 @@ namespace Alice_s_guide_to_creativity
             }
             else if (pentamentoActive)
             {
-                index[0] = 6;
+                index[0] = 5;
                 textDB = pentamentoDialogue;
                 currentIndex = index[5];
             }

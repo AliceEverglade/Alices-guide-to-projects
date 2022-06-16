@@ -1,7 +1,104 @@
 Happy
-welcome to my project which I named PentaMento
+Welcome to my vijf luik project which I named PentaMento. ~ (Penta is Greek/Latin for 5 and Mento comes from the latin word Memento meaning Memory.)
 0,0,0
-#00ffff
-
-
-
+#ffffff
+Cry
+Sadly I did not make the project I was planning to make. ~ My plan was to make a website but I couldn’t muster up any motivation for that.
+0,0,0
+#44ffd1
+Happy
+Luckily I had a lot of fun making this one instead! ~ this is a feature in my Creativity project which is a kind of personality test done by my character called Alice Everglade. ~ (the pixel art)
+0,0,0
+#5bc0eb
+Happy
+I will start off with talking about my first project, then down the line to my 5th. ~ After that I will do the ‘about me’.
+0,0,0
+#ffffff
+Happy
+The Project I chose for Individuality was my Voice Assistant ‘Aico’. ~ This was the Ambition project at the start of the year  ~ where I (foolishly) decided to learn a new coding language.
+0,0,0
+#f9b5ac
+Cry
+I quickly noticed that I might’ve made this a bit too difficult for myself. ~ Though I really enjoy learning so I kept on trying to learn Python. ~ I asked a friend of mine to assist me with this and together we got it to work on a basic level.
+0,0,0
+#c64191
+Sad
+What I learned from this project is that I shouldn’t make it too difficult for myself. ~ I set the bar too high for myself.
+0,0,0
+#ffffff
+Laugh
+Though in my opinion that is the most fun way to approach a project. ~ Sadly I don’t have multiple months to finish something like that.
+0,0,0
+#44ffd1
+Happy
+I do plan to come back to that project in the future to see if I can truly learn Python. ~ And then I can hopefully use the voice assistant.
+0,0,0
+#5bc0eb
+Laugh
+The project I chose for Growth is my Shine Project. ~ Here I learned how to do Special Effects in Unity. ~ this was after the advice to not make it hard for myself, though again I did…
+0,0,0
+#44ffd1
+UwU
+I started out by watching a tutorial on what I wanted to make, ~ Though most of the time when I understood what the tutorial said I just skipped to the next part. ~ My project was going smoothly.
+0,0,0
+#ffffff
+Cry
+Sadly since I am no artist or animator I had to use assets from the internet. ~ These assets did not cooperate very well and this halted my project.
+0,0,0
+#c64191
+Cry
+After a lot of struggling I only had 1 special effect done. ~ The bar I set for myself of 3 special effects with animations was again, not reached.
+0,0,0
+#44ffd1
+Happy
+Although it didn’t go as planned, I do feel confident in what I learned. ~ I think I am capable of making a shader or special effect in Unity without a tutorial.
+0,0,0
+#c64191
+Happy
+The project I chose for Confidence was English writing. ~ I wrote a story about Alice and some of the characters of my friends. ~ The story was about working for an apparently corrupt king.
+0,0,0
+#5bc0eb
+Laugh
+I enjoy writing a lot and even though it was cliche and corny I was still proud of it. ~ I do plan to do more writing in the future, and lots of worldbuilding too for my future games.
+0,0,0
+#ffffff
+Happy
+So I hope I will be able to learn how to make my stories more inviting.
+0,0,0
+#44ffd1
+Happy
+The project I chose for fun was the Media Tour from Creativity. ~ I made this about my favorite game Celeste. ~ (I did this in English which was also very fun)
+0,0,0
+#c64191
+Happy
+Celeste is a fairly well-known platformer game about climbing a strange mountain. ~ Though the story of Celeste delves more into fighting inner demons and learning to live with yourself.
+0,0,0
+#ffffff
+Happy
+I was happy to be able to talk about my favorite game for a school project.
+0,0,0
+#c64191
+Sad
+For the project I take pride in I couldn’t decide. ~ I often have difficulty complimenting my own work as it can always be better. ~ Though my Social Connection project and WTF!/PentaMento (this one) were ones I do take some pride in.
+0,0,0
+#44ffd1
+Happy
+For Social Connection I interviewed an online friend and asked them if I could make a game concept for them. ~ This game concept is something I plan to work out properly in a professional way. ~ Though it has changed a lot since the project ended.
+0,0,0
+#c64191
+Happy
+The WTF project is the one I made PentaMento a part of. ~ I started this project on Monday the 13th of June and was hooked on the idea. ~ So much so that I changed my PentaMento from a website to this.
+0,0,0
+#5bc0eb
+Happy
+I load in text files with a certain layout. ~ Line 1 is the emotion of Alice, line 2 is the text, line 3 is the change in emotion depending on the answer, ~ And line 4 is the color of the text and box.
+0,0,0
+#c64191
+Happy
+I worked hard on this project with the help of a friend who taught me new things about a coding language I thought I knew decently well. ~ This feels very fulfilling to me as I know this knowledge will work well in any future project.
+0,0,0
+#ffffff
+Cry
+Now that those are done, I will talk... “about me”
+0,0,0
+#c64191
