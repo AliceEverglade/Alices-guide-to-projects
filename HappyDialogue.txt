@@ -1,5 +1,5 @@
 Happy
-Hi I'm Alice, I'm here to ask some questions. ~ are you ok with that? ~ (in this project, type: 1 for a positive- , 2 for a negative- and 3 for a neutral answer.) ~ (if there is no question just press enter.)
+Hi I'm Alice, I'm here to ask some questions. ~ are you ok with that? ~ (in this project, type: 1 for a positive- , 2 for a negative- and 3 for a neutral answer.) ~ (if there is no question just press enter.) ~ if you're here for my vijfluik, type the word 'pentamento'.
 0,-4,0
 #00ff00
 Happy

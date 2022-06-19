@@ -56,18 +56,20 @@ namespace Alice_s_guide_to_creativity
         public static string[] pentamentoDialogue;
 
         public static (CanvasImage Emotion, string Response,(int laugh, int sad, int cry) feelings, string Color)[] dialogue;
-        public static CanvasImage[] QRcodes = new CanvasImage[6];
+        
         public static string[,] outputText;
         public static string[] words = new string[100];
         public static string[,] chatbox;
 
         public static bool pentamentoActive = false;
+        public static bool QRCodeDrawn = false;
 
         public static CanvasImage AliceHappy    =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceHappy.png");
         public static CanvasImage AliceSad      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AlicePout.png");
         public static CanvasImage AliceXD       =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceXD.png");
         public static CanvasImage AliceCry      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceCry.png");
         public static CanvasImage AliceUwU      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceUwU.png");
+        public static CanvasImage QRcode        =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\QRCode.png");
 
         static void Main(string[] args)
         {
@@ -305,7 +307,13 @@ namespace Alice_s_guide_to_creativity
                 }
                 AnsiConsole.MarkupLine($"[{dialogue[currentIndex].Color}]" + line + "[/]");
             }
-            
+            if (pentamentoActive && !QRCodeDrawn)
+            {
+                Console.WriteLine("");
+                AnsiConsole.Render(QRcode);
+                QRCodeDrawn = true;
+            }
+
         }
 
         public static void InputHandler()
@@ -370,11 +378,6 @@ namespace Alice_s_guide_to_creativity
                 index[0] = 1;
                 textDB = happyDialogue;
                 currentIndex = index[1];
-            }
-
-            if(pentamentoDialogue == )
-            {
-
             }
             UpdateDialogue();
         }
