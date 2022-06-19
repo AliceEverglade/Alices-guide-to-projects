@@ -1,7 +1,24 @@
 Sad
-I'm so sad :c
+Oh, you’re one of those people.
 0,0,0
 #00ffff
+Sad
+I bet you don’t even like learning new things? ~ (1 if you don’t, 2 if you do.)
+-5,7,4
+#fa4b4b
+Cry
+Why not! Learning new things is the most amazing thing ever!
+0,0,0
+#ed72a3
+Sad
+At least tell me you like the projects you work on?
+0,0,-9
+#3f74c4
+Cry
+I’m kind of disappointed, but lets get back to the questions. (press 1)
+0,-30,0
+#5ec8e6
+
 
 
 

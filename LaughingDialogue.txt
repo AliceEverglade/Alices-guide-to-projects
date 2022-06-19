@@ -1,7 +1,28 @@
 Laugh
-omg I'm laffing no hard
+I know right!
 0,0,0
 #ffffff
+Happy
+I’m glad that you work on projects like that. 
+0,0,0
+#ffff00
+Happy
+I do hope you make sure you’re having fun when working on a project? ~ if you’re not having fun then a project is just a chore instead of a learning experience.
+7,-3,0
+#d12692
+Sad
+I can’t believe there are people who don’t work like this.
+0,0,0
+#cc84f5
+Happy
+Anyhow, one last question before we get back to the list I prepared. ~ when you start a project, do you do it for someone else or for yourself? ~ (1 for self, 2 for someone else.)
+0,0,0
+#94dcf2
+Happy
+That’s nice, lets get back to the questions. ~ (press 1)
+-40,0,0
+#90fca7
+
 
 
 

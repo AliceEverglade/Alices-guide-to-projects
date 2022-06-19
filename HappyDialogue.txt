@@ -1,23 +1,36 @@
 Happy
-Hi I'm Alice, I'm here to ask some questions. ~ are you ok with that? ~ type: 'Y', 'N' or 'IDK'
-10,-1,0
+Hi I'm Alice, I'm here to ask some questions. ~ are you ok with that? ~ (in this project, type: 1 for a positive- , 2 for a negative- and 3 for a neutral answer.) ~ (if there is no question just press enter.)
+0,-4,0
 #00ff00
-Sad
-are you like one of those fancy bitches?
--2,10,0
-#ffffff
-Cry
-beeg sed
--1,3,0
+Happy
+I would like to know about how you approach new projects. ~ do you like to brainstorm and prepare before starting?
+3,-2,0
 #00ffff
+Happy
+how long does it take you to get started? ~ is it closer to an hour or closer to a week? ~ (1 for hour, 2 for week)
+4,-3,0
+#5942c2
+Sad
+And when you start with the project. ~ Do you tend to deviate from any plans you made?
+-5,10,0
+#e98f9b
+Sad
+If you do deviate from the plan. ~ do you make sure that you document this?
+3,-8,0
+#c2306f
 Laugh
-XD lmayo get rekt
-6,-3,0
-#ffff00
+Do you like documentation? ~ Or do you think it’s more of a chore? ~ (1 for like, 2 for chore)
+7,-3,0
+#b581e6
 UwU
-UwU
+And the most important question of all. ~ do you like learning from your projects?
+0,-30,0
+#54e8de
+Happy
+I have heard enough, you seem like a good worker. ~ simply make sure you have fun while doing projects ~ if you’re not having fun you won’t learn from it properly.
 0,0,0
-#ffffff
-
-
-
+#e39332
+UwU
+This is the end. You may now praise me.
+0,0,0
+#5942c2

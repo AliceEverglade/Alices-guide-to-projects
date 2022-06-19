@@ -40,10 +40,6 @@ namespace Alice_s_guide_to_creativity
         public static int cryThreshold = 7;
         public static int sadThreshold = 4;
         public static int dialogueVariables = 4;
-        // laugh > 7 = laugh file
-        // sad < -6 && laugh < 7 = sad file (here cry gets added)
-        // cry > 8 = cry file
-        // anything else = happy file
 
         public static string full = "█";
         public static string top = "▀";
@@ -60,6 +56,7 @@ namespace Alice_s_guide_to_creativity
         public static string[] pentamentoDialogue;
 
         public static (CanvasImage Emotion, string Response,(int laugh, int sad, int cry) feelings, string Color)[] dialogue;
+        public static CanvasImage[] QRcodes = new CanvasImage[6];
         public static string[,] outputText;
         public static string[] words = new string[100];
         public static string[,] chatbox;
@@ -71,7 +68,6 @@ namespace Alice_s_guide_to_creativity
         public static CanvasImage AliceXD       =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceXD.png");
         public static CanvasImage AliceCry      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceCry.png");
         public static CanvasImage AliceUwU      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceUwU.png");
-        public static CanvasImage AliceOut      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceOut.png");
 
         static void Main(string[] args)
         {
@@ -139,9 +135,6 @@ namespace Alice_s_guide_to_creativity
                             break;
                         case "UwU":
                             dialogue[i / dialogueVariables].Emotion = AliceUwU;
-                            break;
-                        case "Out":
-                            dialogue[i / dialogueVariables].Emotion = AliceOut;
                             break;
                         default:
                             dialogue[i / dialogueVariables].Emotion = AliceHappy;
@@ -377,6 +370,11 @@ namespace Alice_s_guide_to_creativity
                 index[0] = 1;
                 textDB = happyDialogue;
                 currentIndex = index[1];
+            }
+
+            if(pentamentoDialogue == )
+            {
+
             }
             UpdateDialogue();
         }
