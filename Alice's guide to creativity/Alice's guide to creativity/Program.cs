@@ -64,6 +64,7 @@ namespace Alice_s_guide_to_creativity
         public static bool pentamentoActive = false;
         public static bool QRCodeDrawn = false;
 
+        //put in absolute path here to these images
         public static CanvasImage AliceHappy    =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceHappy.png");
         public static CanvasImage AliceSad      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AlicePout.png");
         public static CanvasImage AliceXD       =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceXD.png");
@@ -73,7 +74,7 @@ namespace Alice_s_guide_to_creativity
 
         static void Main(string[] args)
         {
-            
+            // Initiate some variables
             outputLines = height - 2;
             chatbox = new string[height,width];
             offset.y = textHeight;
@@ -81,9 +82,9 @@ namespace Alice_s_guide_to_creativity
             textLength = width - 50;
             outputText = new string[outputLines, textLength];
 
-
+            // maximize console screen
             Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);  
-             ShowWindow(ThisConsole, MAXIMIZE);
+            ShowWindow(ThisConsole, MAXIMIZE);
             
             AliceHappy.MaxWidth(48);
 
@@ -100,28 +101,33 @@ namespace Alice_s_guide_to_creativity
         }
         public static void LoadDialogue()
         {
-            //
-
             //go through text file, for every new line => add to dialogue.Emotion and dialogue.Response
+
+            //put in absolute path to these text files
             happyDialogue = System.IO.File.ReadAllLines(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\HappyDialogue.txt");
             sadDialogue = System.IO.File.ReadAllLines(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\SadDialogue.txt");
             cryingDialogue = System.IO.File.ReadAllLines(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\CryingDialogue.txt");
             laughingDialogue = System.IO.File.ReadAllLines(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\LaughingDialogue.txt");
             pentamentoDialogue = System.IO.File.ReadAllLines(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\PentamentoDialogue.txt");
+            //fill index 0 with a 1 and index 1 to index Length with a 0
             index[0] = 1;
             for (int i = 1; i < index.Length; i++)
             {
                 index[i] = 0;
             }
+            //set the active text file equal to happyDialogue
             textDB = happyDialogue;
             UpdateDialogue();
         }
         public static void UpdateDialogue()
         {
+            // initiate Dialogue which is an array of tuples
             dialogue = new (CanvasImage Emotion, string Response, (int laugh, int sad, int cry) feelings, string Color)[textDB.Length / dialogueVariables];
+
             //split based on line
             for (int i = 0; i < textDB.Length - dialogueVariables + 1; i++)
             {
+                //Line 1 is Emotion
                 if (i % dialogueVariables == 0)
                 {
                     switch (textDB[i])
@@ -143,10 +149,12 @@ namespace Alice_s_guide_to_creativity
                             break;
                     }
                 }
+                //Line 2 is Text
                 else if (i % dialogueVariables == 1)
                 {
                     dialogue[i / dialogueVariables].Response = textDB[i];
                 }
+                //Line 3 is the change in emotion variables on a positive or negative answer
                 else if (i % dialogueVariables == 2)
                 {
                     // turn string into string array into int array of feelings
@@ -155,15 +163,16 @@ namespace Alice_s_guide_to_creativity
                     dialogue[i / dialogueVariables].feelings.sad = feelingsInput[1];
                     dialogue[i / dialogueVariables].feelings.cry = feelingsInput[2];
                 }
+                //Line 4 is the color of the text and chatbox
                 else
                 {
                     dialogue[i / dialogueVariables].Color = textDB[i];
                 }
-
             }
         }
         public static void GenerateChatBox()
         {
+            //filling the chatbox array with the border of the chatbox
             //shush I hate switch cases
             for(int i = 0; i <= height-1 ; i++)
             {
@@ -205,22 +214,23 @@ namespace Alice_s_guide_to_creativity
                     }
                 }
             }
-
         }
-
         public static void TextToArray(string target)
         {
             int counter = 0;
             int currentPosition = 0;
-
+            //clear the words array and outputText array
             Array.Clear(words, 0, words.Length);
             Array.Clear(outputText, 0, outputText.Length);
-                words = target.Split(' ');
+            //split the input string into seperate words by splitting the array on every space
+            words = target.Split(' ');
 
-            
+            //loop through the different lines available
             for (int i = 0; i < height -2; i++)
             {
+                //set current position on 0 every new line
                 currentPosition = 0;
+                //loop through all words while the next word still fits on the line
                 while(currentPosition < textLength && counter < words.Length)
                 {
                     // if the word fits the current line, check if the next word is a linebreak, if not then add the characters to outputText and then add a space behind it.
@@ -233,7 +243,6 @@ namespace Alice_s_guide_to_creativity
                         }
                         else
                         {
-                            
                             foreach (char character in words[counter])
                             {
                                 outputText[i, currentPosition] = character.ToString();
@@ -243,7 +252,6 @@ namespace Alice_s_guide_to_creativity
                             currentPosition++;
                             counter++;
                         }
-                        
                     }
                     else
                     {
@@ -255,6 +263,7 @@ namespace Alice_s_guide_to_creativity
         }
         public static void ClearText()
         {
+            //loop through the chatbox array and delete anything that isn't the border
             for (int i = 0; i <= height - 1; i++)
             {
                 for (int j = 0; j <= width - 1; j++)
@@ -266,21 +275,9 @@ namespace Alice_s_guide_to_creativity
                 }
             }
         }
-
         public static void UpdateText()
         {
-            #region debug text
-            //foreach (string word in words)
-            //{
-            //    Console.Write(word + " ");
-            //}
-            //Console.WriteLine("");
-            //foreach (string character in outputText)
-            //{
-            //    Console.Write(character);
-            //}
-            #endregion
-            
+            //loop through the chatbox array and fill in the characters in their respective index
             for (int i = 0; i < outputLines; i++)
             {
                 for (int j = 0; j < textLength; j++)
@@ -292,33 +289,41 @@ namespace Alice_s_guide_to_creativity
                 }
             }
         }
-
         public static void FrameUpdate(CanvasImage image, string printText)
         {
+            //clear the frame
             Console.Clear();
+            //load in the Emotion image
             AnsiConsole.Render(image);
+            //turn the input text into an array to process it into the chatbox array
             TextToArray(printText);
+            //loop through every line of the chatbox
             for (int i = 0; i < height; i++)
             {
+                //clear the line every time it goes to the next line in the chatbox
                 line = "";
+                //loop through the current line and fill the line string with that current line's values
                 for(int j = 0; j < width; j++)
                 {
                     line += chatbox[i, j]; 
                 }
+                //draw the line string according to the input color
                 AnsiConsole.MarkupLine($"[{dialogue[currentIndex].Color}]" + line + "[/]");
             }
+            // on the first frame of pentamento, draw a QR Code
             if (pentamentoActive && !QRCodeDrawn)
             {
                 Console.WriteLine("");
                 AnsiConsole.Render(QRcode);
                 QRCodeDrawn = true;
             }
-
         }
-
         public static void InputHandler()
         {
+            //read the user input
             input = Console.ReadLine().ToLower();
+            //check what the user input, 1 will add the change in emotions of this text, 2 will subtract it, 3 won't do anything with it,
+            ////pentamento will swap to my vijfluik project and anything else won't do anything as if a neutral answer
             switch (input)
             {
                 case "1":
@@ -341,16 +346,17 @@ namespace Alice_s_guide_to_creativity
                 default:
                     break;
             }
+            //go to the next index of the text file
             currentIndex++;
             TextHandler();
         }
         public static void TextHandler()
         {
             index[index[0]] = currentIndex;
+            //if emotions changed enough to swap text files, save currentIndex in previous index -> set currentIndex equal to new index
             if (laugh >= laughThreshold)
             {
-                //save currentIndex in previous index -> set currentIndex equal to new index
-                //index[0] = previous index (can be 1,2 or 3
+                
                 index[0] = 2;
                 textDB = laughingDialogue;
                 currentIndex = index[2];
@@ -367,6 +373,7 @@ namespace Alice_s_guide_to_creativity
                 textDB = cryingDialogue;
                 currentIndex = index[4];
             }
+            //swap to pentamento dialogue 
             else if (pentamentoActive)
             {
                 index[0] = 5;
@@ -383,15 +390,3 @@ namespace Alice_s_guide_to_creativity
         }
     }
 }
-// █ , ▄ , ▀
-
-
-/*
- *
- * ▀▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄▀
- * █    Hi I'm Alice, I'm here to ask some questions, are you ok with that?                                                   █
- * █    (type 'Y' for yes or 'N' for no)                                                                                      █
- * █                                                                                                                          █
- * █                                                                                                                          █
- * ▄▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▀▄
-*/
