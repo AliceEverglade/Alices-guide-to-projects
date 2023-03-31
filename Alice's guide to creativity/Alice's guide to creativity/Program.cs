@@ -70,6 +70,7 @@ namespace Alice_s_guide_to_creativity
         public static CanvasImage AliceXD       =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceXD.png");
         public static CanvasImage AliceCry      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceCry.png");
         public static CanvasImage AliceUwU      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceUwU.png");
+        public static CanvasImage AliceOut      =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\AliceOut.png");
         public static CanvasImage QRcode        =  new CanvasImage(@"C:\Users\Joey\Documents\GitHubSL\Alices-guide-to-projects\QRCode.png");
 
         static void Main(string[] args)
@@ -143,6 +144,9 @@ namespace Alice_s_guide_to_creativity
                             break;
                         case "UwU":
                             dialogue[i / dialogueVariables].Emotion = AliceUwU;
+                            break;
+                        case "Out":
+                            dialogue[i / dialogueVariables].Emotion = AliceOut;
                             break;
                         default:
                             dialogue[i / dialogueVariables].Emotion = AliceHappy;

@@ -102,3 +102,31 @@ Cry
 Now that those are done, I will talk... “about me”
 0,0,0
 #c64191
+Out
+I am Alice, previously known as Joey. ~ I am 20 (21 at the start of the second year) years old. ~  My hobbies are mostly gaming, making games myself, watching anime, playing DnD and learning new things, ~ for instance this summer I am going to learn / have learned sewing.
+0,0,0
+#44ffd1
+Cry
+I am as socially awkward as it gets, and that won't change anytime soon... I think. ~ I have ADHD, but not in the extroverted hyperactive way. ~ I get distracted easily and lose interest in things quite quickly which makes motivation difficult from time to time.
+0,0,0
+#c64191
+Out
+I recently came out as trans fem (dec 2021) to my friends but I myself am having the hardest time with switching pronouns so he/she/they are all fine. ~ Getting back to the socially awkward part, if I ever seem distant or disinterested, ~ I simply don't know how to react or start a conversation so my apologies for that xD
+0,0,0
+#ffffff
+Sad
+I often come up with a project that is way too difficult simply so I learn new things. ~ for my ambition project I learned Python to create a voice assistant, it half worked. ~ for my WTF creativity project (the one this is in). is a chat system in command line. ~ and I also made snake in command line instead of following the scripting class.
+0,0,0
+#44ffd1
+Laugh
+I did enjoy making these projects a a lot but they don't always turn out the way I expected.
+0,0,0
+#5bc0eb
+UwU
+If you have any questions I will try my best to answer them.
+0,0,0
+#c64191
+Laugh
+Welp Cya! xD
+0,0,0
+#ffffff
